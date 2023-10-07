@@ -42,7 +42,7 @@ if "%key%"=="%key2%" (
     echo Good key. When you will start the game you won't get this message again.
     echo.
     pause
-    goto :x
+    goto :x2
 ) else (
     echo Wrong key: %key%. Restarting.
     goto :locked2
@@ -66,7 +66,7 @@ if "%key%"=="%key2%" (
     echo Good key. When you will start the game you won't get this message again.
     echo.
     pause
-    goto :x
+    goto :x2
 ) else (
     echo Wrong key: %key%. Restarting.
     goto :locked3
@@ -84,19 +84,23 @@ if "%key%"=="%key2%" (
     echo Good key. When you will start the game you won't get this message again.
     echo.
     pause
-    goto :x
+    goto :x2
 ) else (
     echo Wrong key: %key%. Restarting.
     goto :blocked
 )
-:x
-cls
-echo Your key exist already!
-pause
-exit
 :blocked
 echo Blocked. > data\block
 cls
 echo The KeySystem is blocked.
 echo Tries left: 0
+pause
+exit
+:x
+:x2
+REM ------------ YOUR MAIN SCRIPT HERE ------------
+REM ------------ DO NOT DELETE THE :x -------------
+REM ------------ DO NOT DELETE THE :x2 ------------
+cls
+echo YOUR MAIN SCRIPT HERE
 pause
