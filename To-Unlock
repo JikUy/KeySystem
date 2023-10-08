@@ -1,0 +1,12 @@
+DATA FOLDER IS HIDDEN 
+TO UNHIDE CREATE A BAT FOLDER THEN PUT THAT IN THE FOLDER: "attrib -h data"
+------------------------------------------------------------------------------------
+To deblock delete thoses files:
+1: %temp%\dy676fm.png
+2: %appdata%\c0jm5d.beb7m
+3: data\block
+------------------------------------------------------------------------------------
+To reset the tries delete thoses files:
+1: data\try1
+2: data\try2
+3: data\try3
