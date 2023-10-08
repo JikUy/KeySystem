@@ -51,6 +51,7 @@ if "%key%"=="%key2%" (
     cls
 set "try=2"
 echo This program is locked.
+REM ------- You can delete the message that says what the key is. -------
 echo The key is: %key2%
 echo %try% Tries left.
 set /p key=
